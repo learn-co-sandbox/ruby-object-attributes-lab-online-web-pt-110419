@@ -17,5 +17,10 @@ class Person
   end
   
   def job=(job_description)
-    @job
+    @job = job_description
+  end
+  
+  def job 
+    @job 
+  end
 end 
