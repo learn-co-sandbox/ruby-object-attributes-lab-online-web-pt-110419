@@ -5,14 +5,17 @@ class Person
 	  @job = job
   end 
   
-  def name=(full_name, job_description)
+  def name=(full_name, job)
     @first_name, @last_name = full_name.split
     @first_name = first_name
     @last_name = last_name
-    @job = job 
+    @job = job_description 
   end
   
   def name
-    "'#{@first_name} #{@last_name}'.strip #{job}"
+    "#{@first_name} #{@last_name}".strip
   end
+  
+  def job=(job_description)
+    @job
 end 
